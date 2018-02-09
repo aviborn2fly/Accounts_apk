@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="in.ucetvbuhzb.acc.AboutFullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="@color/black_overlay"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <RelativeLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fullscreen_content_controls2"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/fullscreen_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="DEVELOPED BY:"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fullscreen_content3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="@string/about_names"
+                android:textColor="#33b5e5"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/fullscreen_content2"/>
+            <TextView
+                android:id="@+id/fullscreen_content4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="\nSession: 2013-17 \n UCET,VBU"
+                android:textColor="#ccff99"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/fullscreen_content3"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>
